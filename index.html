@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelWise — Udhëto me Zgjuarsi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navigimi -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">✈</span>
+                <span class="logo-text">Travel<span class="logo-accent">Wise</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Kreu</a></li>
+                <li><a href="udhetimi.html" class="nav-link">Guida</a></li>
+                <li><a href="lista.html" class="nav-link">Lista</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero-section">
+        <div class="floating-particles" id="floatingParticles"></div>
+        <div class="hero-bg-pattern"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span> Guida Nr. 1 e Udhëtarëve
+            </div>
+            <h1 class="hero-title">
+                Udhëto me<br>
+                <span class="shimmer-text">Zgjuarsi</span> dhe <span class="hero-title-accent">Siguri</span>
+            </h1>
+            <p class="hero-subtitle">
+                Gjithçka që të duhet për një udhëtim të përsosur — 
+                nga dokumentet dhe rregullat, deri te lista e gjërave që s'mund të harrohen.
+            </p>
+            <div class="hero-actions">
+                <a href="udhetimi.html" class="btn btn-primary">
+                    Zbulo Guidën e Plotë
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+                <a href="lista.html" class="btn btn-outline">
+                    Lista e Kontrollit
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Shtete të Mbuluara</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">Këshilla Udhëtimi</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Falas për të Gjithë</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- "A e dini se?" Ticker -->
+        <div class="container" style="position: relative; z-index: 2; padding-bottom: 2rem;">
+            <div class="did-you-know">
+                <span class="dyk-icon">💡</span>
+                <span class="dyk-text" id="dykText"></span>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Shfleto</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+        </div>
+    </section>
+
+    <!-- ===== PËRMBLEDHJE E SHPEJTË ===== -->
+    <section class="overview-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Çfarë Gjen Këtu</span>
+                <h2 class="section-title">Gjithçka që i Duhet një Udhëtari</h2>
+                <p class="section-desc">
+                    Tre faqe, qindra këshilla — gjithçka në një vend. Zbulo guidën, rregullat, përgjegjësitë dhe listën tënde personale.
+                </p>
+            </div>
+
+            <div class="overview-grid">
+                <a href="udhetimi.html" class="overview-card glow-on-hover tilt-card">
+                    <div class="ov-icon">📚</div>
+                    <h3>Guida e Udhëtimit</h3>
+                    <p>Dokumentet, shëndeti, financat, transporti, akomodimi dhe komunikimi — të gjitha të shpjeguara qartë.</p>
+                    <span class="ov-link">Shko te Guida <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+                </a>
+                <a href="udhetimi.html#rregullat" class="overview-card glow-on-hover tilt-card">
+                    <div class="ov-icon">⚖️</div>
+                    <h3>Rregullat dhe Ligjet</h3>
+                    <p>Çfarë lejohet dhe çfarë nuk lejohet në aeroport dhe gjatë udhëtimit.</p>
+                    <span class="ov-link">Shko te Rregullat <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+                </a>
+                <a href="udhetimi.html#pergjegjesite" class="overview-card glow-on-hover tilt-card">
+                    <div class="ov-icon">🤝</div>
+                    <h3>Përgjegjësitë</h3>
+                    <p>Si të jesh një udhëtar i përgjegjshëm: respekto kulturën, mbron mjedisin, mbështet ekonominë lokale.</p>
+                    <span class="ov-link">Shko te Përgjegjësitë <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+                </a>
+                <a href="lista.html" class="overview-card glow-on-hover tilt-card">
+                    <div class="ov-icon">✅</div>
+                    <h3>Lista e Kontrollit</h3>
+                    <p>Lista interaktive me 46 artikuj. Shëno çdo gjë dhe ndiq progresin në kohë reale.</p>
+                    <span class="ov-link">Shko te Lista <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CITATE UDHËTIMI ===== -->
+    <section class="quotes-section">
+        <div class="container">
+            <div class="quote-card">
+                <p class="quote-text" id="quoteText"></p>
+                <p class="quote-author" id="quoteAuthor"></p>
+                <div class="quote-nav" id="quoteDots">
+                    <button class="quote-dot active" data-index="0"></button>
+                    <button class="quote-dot" data-index="1"></button>
+                    <button class="quote-dot" data-index="2"></button>
+                    <button class="quote-dot" data-index="3"></button>
+                    <button class="quote-dot" data-index="4"></button>
+                    <button class="quote-dot" data-index="5"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PLANIFIKUES I SHPEJTË ===== -->
+    <section class="planner-section" id="planner">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">🧠 Interaktive</span>
+                <h2 class="section-title">Planifikues i Shpejtë i Udhëtimit</h2>
+                <p class="section-desc">
+                    Shkruaj destinacionin, zgjidh llojin e udhëtimit dhe merr një plan të personalizuar në sekonda.
+                </p>
+            </div>
+            <div class="planner-card">
+                <form class="planner-form" id="plannerForm">
+                    <div class="form-group full-width">
+                        <label>🌍 Destinacioni</label>
+                        <input type="text" class="form-input" id="destInput" placeholder="p.sh. Barcelonë, Tokio, Dubai..." required>
+                    </div>
+                    <div class="form-group">
+                        <label>📅 Sa ditë?</label>
+                        <input type="number" class="form-input" id="daysInput" value="7" min="1" max="90" required>
+                    </div>
+                    <div class="form-group">
+                        <label>🎯 Lloji i Udhëtimit</label>
+                        <select class="form-select" id="typeSelect">
+                            <option value="plesant">🏖️ Pushime Plazhi</option>
+                            <option value="aventur">🏔️ Aventurë & Natyrë</option>
+                            <option value="ekonomik">💰 Ekonomik (Backpacker)</option>
+                            <option value="mesatar">🏨 Mesatar (Comfort)</option>
+                            <option value="luksoz">👑 Luksoz (Premium)</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit" class="btn btn-primary btn-ripple" style="width: 100%; justify-content: center;">
+                            ✨ Gjenero Planin Tim
+                        </button>
+                    </div>
+                </form>
+                <div class="planner-result" id="plannerResult">
+                    <h4>🧳 Plani yt për <strong id="rDest"></strong></h4>
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <span class="r-value" id="rBudget">—</span>
+                            <span class="r-label">Buxheti i Përllogaritur</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="r-value" id="rDays">—</span>
+                            <span class="r-label">Kohëzgjatja</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="r-value" id="rVisa">—</span>
+                            <span class="r-label">Viza</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="r-value" id="rClothes">—</span>
+                            <span class="r-label">Veshje e Rekomanduar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== KALKULATOR BUXHETI ===== -->
+    <section class="calculator-section" id="calculator">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">💰 Interaktive</span>
+                <h2 class="section-title">Kalkulator i Buxhetit Ditor</h2>
+                <p class="section-desc">
+                    Rregullo shpenzimet e tua ditore dhe shiko totalin e parashikuar për udhëtimin tënd.
+                </p>
+            </div>
+            <div class="calc-card">
+                <div class="calc-row">
+                    <label>🛏️ Akomodim /natë</label>
+                    <input type="range" class="calc-slider" min="10" max="300" value="60" step="5" data-display="calcAccom">
+                    <span class="calc-value" id="calcAccom">60€</span>
+                </div>
+                <div class="calc-row">
+                    <label>🍽️ Ushqim /ditë</label>
+                    <input type="range" class="calc-slider" min="10" max="150" value="30" step="5" data-display="calcFood">
+                    <span class="calc-value" id="calcFood">30€</span>
+                </div>
+                <div class="calc-row">
+                    <label>🚕 Transport /ditë</label>
+                    <input type="range" class="calc-slider" min="0" max="100" value="15" step="5" data-display="calcTrans">
+                    <span class="calc-value" id="calcTrans">15€</span>
+                </div>
+                <div class="calc-row">
+                    <label>🎫 Aktivitete /ditë</label>
+                    <input type="range" class="calc-slider" min="0" max="200" value="25" step="5" data-display="calcActiv">
+                    <span class="calc-value" id="calcActiv">25€</span>
+                </div>
+                <div class="calc-row">
+                    <label>🎁 Të Tjera /ditë</label>
+                    <input type="range" class="calc-slider" min="0" max="100" value="15" step="5" data-display="calcOther">
+                    <span class="calc-value" id="calcOther">15€</span>
+                </div>
+                <div class="calc-total">
+                    <span class="total-label">Totali Ditor i Përllogaritur</span>
+                    <span class="total-amount" id="calcTotal">145€</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <span class="logo-icon">✈</span>
+                    Travel<span class="logo-accent">Wise</span>
+                </a>
+                <p>Guida më e plotë për çdo udhëtar. Informohu, përgatitu dhe udhëto pa stres.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Faqet</h4>
+                    <a href="index.html">Kreu</a>
+                    <a href="udhetimi.html">Guida e Udhëtimit</a>
+                    <a href="lista.html">Lista e Kontrollit</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Burime</h4>
+                    <a href="#" target="_blank" rel="noopener">Ambasadat Shqiptare</a>
+                    <a href="#" target="_blank" rel="noopener">Këshillat e Udhëtimit</a>
+                    <a href="#" target="_blank" rel="noopener">Sigurimi i Udhëtimit</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TravelWise. Të gjitha të drejtat e rezervuara. Krijuar me ❤️ për udhëtarët shqiptarë.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

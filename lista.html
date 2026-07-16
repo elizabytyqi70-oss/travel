@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista e Kontrollit — TravelWise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navigimi -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">✈</span>
+                <span class="logo-text">Travel<span class="logo-accent">Wise</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Kreu</a></li>
+                <li><a href="udhetimi.html" class="nav-link">Guida</a></li>
+                <li><a href="lista.html" class="nav-link active">Lista</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== LISTA E KONTROLLIT ===== -->
+    <section class="checklist-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag section-tag-checklist">Checklist</span>
+                <h2 class="section-title">Lista e Plotë e Gjërave të Nevojshme</h2>
+                <p class="section-desc">
+                    Shëno çdo artikull që ke përfunduar. Progresi ruhet automatikisht në shfletuesin tënd.
+                    Kthehu sa herë të duash — lista mbetet siç e ke lënë.
+                </p>
+            </div>
+
+            <div class="checklist-container">
+                <!-- 1. Para Udhëtimit -->
+                <div class="checklist-category">
+                    <div class="checklist-cat-header">
+                        <span class="cat-icon">📋</span>
+                        <h3>Para Udhëtimit <span class="cat-badge">1-4 javë para</span></h3>
+                    </div>
+                    <div class="checklist-items" id="checklist-before">
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Kontrollo vlefshmërinë e pasaportës (minimum 6 muaj nga data e kthimit)</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Apliko për vizë nëse nevojitet</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Blej biletat e avionit/trenit/autobusit</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Rezervo akomodimin (hotel, Airbnb, hostel)</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Blej sigurimin e udhëtimit</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Kontrollo dhe bëj vaksinat e nevojshme</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Njofto bankën për udhëtimin (që të mos bllokohet karta)</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Shkarko hartat offline dhe aplikacionet e nevojshme</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Bëj fotokopje të të gjitha dokumenteve (2-3 kopje)</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Rezervo transportin nga aeroporti/stacioni</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Këmbe një shumë të vogël në monedhën lokale</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Përgatit buxhetin ditor për destinacionin</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 2. Bagazhi i Dorës -->
+                <div class="checklist-category">
+                    <div class="checklist-cat-header">
+                        <span class="cat-icon">🎒</span>
+                        <h3>Bagazhi i Dorës <span class="cat-badge">Merr me vete në kabinë</span></h3>
+                    </div>
+                    <div class="checklist-items" id="checklist-carryon">
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Pasaporta dhe të gjitha dokumentet e udhëtimit</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Portofoli me para cash, karta bankare dhe sigurimi</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Celulari dhe kufjet</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Power bank (nën 27,000 mAh) dhe kabllot e karikimit</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Ilaçet personale me recetën e mjekut</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Laptop/Tablet dhe karikuesi</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Një set rrobash rezervë (në rast se humbet bagazhi)</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Çantë e vogël me lëngje (max 100ml secila) në qese transparente</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Snacks dhe shishe uji bosh (mbushe pas kontrollit)</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Jastëk udhëtimi, maskë për sytë dhe tapa veshi</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- 3. Bagazhi i Dorëzuar -->
+                <div class="checklist-category">
+                    <div class="checklist-cat-header">
+                        <span class="cat-icon">🧳</span>
+                        <h3>Bagazhi i Dorëzuar <span class="cat-badge">Valixhja kryesore</span></h3>
+                    </div>
+                    <div class="checklist-items" id="checklist-checked">
+                        <h4 class="sub-cat">👕 Veshje</h4>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Të brendshme dhe çorape (1 për çdo ditë + 2 rezervë)</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Bluza/T-shirt (material që merr frymë — pambuk ose bambu)</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Pantallona të gjata dhe të shkurtra</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Xhaketë e lehtë/pallto (edhe për vende të ngrohta — darkat janë të freskëta)</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Këpucë të rehatshme për ecje + sandale/flip-flops</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Rroba banje dhe peshqir plazhi (nëse udhëton për det)</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Kapelë, krem dielli (SPF 50+), syze dielli</span></label>
+
+                        <h4 class="sub-cat">🧴 Higjiena Personale</h4>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Furçë dhe pastë dhëmbësh</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Shampo, balsam dhe sapun (në shishe udhëtimi të vogla)</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Dezodorant dhe parfum</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Krem hidratues dhe balsam buzësh</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Makinë rroje dhe shkumë rroje</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Piskatore, gërshërë thonjsh, lime</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Peceta të lagura dhe dezinfektant duarsh</span></label>
+
+                        <h4 class="sub-cat">🔧 Të Tjera</h4>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Përshtatës universal prizash</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Kit i ndihmës së parë (fasho, antiseptik, ilaçe bazë)</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Çantë e vogël shpine për ekskursione ditore</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Dry i vogël për valixhe dhe çelës rezervë</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Qese plastike për rroba të pista dhe këpucë</span></label>
+                        <label class="checklist-item"><input type="checkbox" class="check-input"><span class="check-custom"></span><span class="check-text">Libër/Kindle për të lexuar gjatë udhëtimit</span></label>
+                    </div>
+                </div>
+
+                <!-- 4. Dita e Nisjes -->
+                <div class="checklist-category">
+                    <div class="checklist-cat-header">
+                        <span class="cat-icon">🚀</span>
+                        <h3>Dita e Nisjes <span class="cat-badge">Kontrolli i fundit</span></h3>
+                    </div>
+                    <div class="checklist-items" id="checklist-departure">
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Check-in online (24 orë para fluturimit) — kurse kohë në aeroport</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Kontrollo orarin e fluturimit (vonesa, ndryshime gate)</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Dokumentet në çantën e dorës — PASAPORTA është gjëja më e rëndësishme!</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Celulari i karikuar 100% + power bank-u gati</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Transferi nga aeroporti i konfirmuar</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Dritat, uji, gazi dhe dyert e shtëpisë — të mbyllura dhe të siguruara</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Njofto fqinjët ose dikë të besuar për mungesën tënde</span>
+                        </label>
+                        <label class="checklist-item">
+                            <input type="checkbox" class="check-input">
+                            <span class="check-custom"></span>
+                            <span class="check-text">Merr çelësat rezervë të shtëpisë nga personi i besuar (nëse i ke lënë)</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progresi -->
+            <div class="checklist-progress">
+                <div class="progress-info">
+                    <span class="progress-label">Progresi i Përgjithshëm</span>
+                    <span class="progress-percent" id="progressPercent">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-stats">
+                    <span id="progressChecked">0</span> nga <span id="progressTotal">0</span> artikuj të përfunduar
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <span class="logo-icon">✈</span>
+                    Travel<span class="logo-accent">Wise</span>
+                </a>
+                <p>Guida më e plotë për çdo udhëtar. Informohu, përgatitu dhe udhëto pa stres.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Faqet</h4>
+                    <a href="index.html">Kreu</a>
+                    <a href="udhetimi.html">Guida e Udhëtimit</a>
+                    <a href="lista.html">Lista e Kontrollit</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Burime</h4>
+                    <a href="#" target="_blank" rel="noopener">Ambasadat Shqiptare</a>
+                    <a href="#" target="_blank" rel="noopener">Këshillat e Udhëtimit</a>
+                    <a href="#" target="_blank" rel="noopener">Sigurimi i Udhëtimit</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TravelWise. Të gjitha të drejtat e rezervuara. Krijuar me ❤️ për udhëtarët shqiptarë.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

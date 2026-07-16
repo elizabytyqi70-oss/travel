@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida e Udhëtimit — TravelWise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navigimi -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">✈</span>
+                <span class="logo-text">Travel<span class="logo-accent">Wise</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Kreu</a></li>
+                <li><a href="udhetimi.html" class="nav-link active">Guida</a></li>
+                <li><a href="lista.html" class="nav-link">Lista</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== SEKSIONI 1: GJËRAT THEMELORE ===== -->
+    <section id="themelore" class="essentials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Thelbësore</span>
+                <h2 class="section-title">Gjërat Themelore për Çdo Udhëtar</h2>
+                <p class="section-desc">
+                    Para se të nisesh, sigurohu që i ke këto gjëra në rregull. 
+                    Këto janë baza pa të cilën asnjë udhëtim nuk duhet të fillojë.
+                </p>
+            </div>
+
+            <div class="essentials-grid">
+                <!-- 1. Dokumentet -->
+                <article class="essential-card">
+                    <div class="card-icon card-icon-docs">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    </div>
+                    <h3>Dokumentet e Udhëtimit</h3>
+                    <ul>
+                        <li><strong>Pasaporta</strong> — E vlefshme të paktën <em>6 muaj</em> pas datës së kthimit. Pa këtë, nuk futesh në shumicën e shteteve.</li>
+                        <li><strong>Viza</strong> — Kontrollo nëse destinacioni kërkon vizë. Apliko të paktën 4-6 javë përpara. Disa viza zgjasin deri në 15 ditë për t'u përpunuar.</li>
+                        <li><strong>Letërnjoftimi</strong> — Merre gjithmonë si dokument rezervë. Në BE mjafton letërnjoftimi, por jashtë saj duhet pasaporta.</li>
+                        <li><strong>Biletat</strong> — Mbaji të printuara dhe në format dixhital (email, aplikacion i kompanisë ajrore).</li>
+                        <li><strong>Sigurimi i Udhëtimit</strong> — I detyrueshëm për shumë shtete! Mbulon shëndetin (deri në 30,000€), bagazhin e humbur dhe anulimet e fluturimit. Kostoja: rreth 1.5-3€/ditë.</li>
+                        <li><strong>Rezervimet</strong> — Hotel, transport, aktivitete — ruaj të gjitha konfirmimet. Disa shtete kërkojnë dëshmi të akomodimit në kufi.</li>
+                        <li><strong>Fotokopje</strong> — Bëj 2-3 kopje të të gjitha dokumenteve dhe ruaji veçmas nga origjinalet. Lër një kopje edhe te një person i besuar në shtëpi.</li>
+                    </ul>
+                </article>
+
+                <!-- 2. Shëndeti -->
+                <article class="essential-card">
+                    <div class="card-icon card-icon-health">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <h3>Shëndeti dhe Siguria</h3>
+                    <ul>
+                        <li><strong>Vaksinat</strong> — Kontrollo vaksinat e detyrueshme dhe të rekomanduara në faqen e OBSH-së ose te mjeku. Disa shtete kërkojnë vaksinën e etheve të verdha.</li>
+                        <li><strong>Karta Ndërkombëtare e Vaksinimit</strong> — E detyrueshme për disa shtete. Merre nga Instituti i Shëndetit Publik.</li>
+                        <li><strong>Ilaçet Personale</strong> — Merr mjaftueshëm për të gjithë qëndrimin + 3 ditë rezervë. Receta e mjekut duhet të jetë në anglisht.</li>
+                        <li><strong>Kit i Ndihmës së Parë</strong> — Fasho, antiseptik (Betadinë), qetësues dhimbjesh (Paracetamol/Ibuprofen), antihistaminikë për alergji, ilaçe kundër diarresë, termometër dixhital, gërshërë të vogla, pincetë.</li>
+                        <li><strong>Numrat e Emergjencës</strong> — Ruaj numrat: 112 (emergjenca në BE), ambulanca, policia, spitali më i afërt, ambasada shqiptare.</li>
+                        <li><strong>Uji i Pijshëm</strong> — Kontrollo nëse uji i çezmës është i pijshëm. Në shumë shtete aziatike dhe afrikane, pi vetëm ujë në shishe të mbyllur.</li>
+                        <li><strong>Repelent kundër Mushkonjave</strong> — I domosdoshëm në zonat tropikale për të shmangur malarien, Dengën dhe Zika-n.</li>
+                    </ul>
+                </article>
+
+                <!-- 3. Financat -->
+                <article class="essential-card">
+                    <div class="card-icon card-icon-money">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3>Financat dhe Paratë</h3>
+                    <ul>
+                        <li><strong>Monedha Lokale</strong> — Këmbe 50-100€ para nisjes për shpenzime të menjëhershme (taksi, ushqim). Kursi në aeroport është më i keqi — këmbe vetëm aq sa të duhet për të filluar.</li>
+                        <li><strong>Njoftimi i Bankës</strong> — Thirr ose shkruaj bankës që do të udhëtosh. Pa këtë njoftim, karta jote mund të bllokohet automatikisht si "transaksion i dyshimtë".</li>
+                        <li><strong>Karta Rezervë</strong> — Mbaj të paktën 2 karta (Visa + Mastercard) nga banka të ndryshme. Nëse njëra humbet ose bllokohet, ke tjetrën.</li>
+                        <li><strong>Cash Rezervë</strong> — 100-200€ në euro ose dollarë amerikanë për raste emergjente. Shumë vende ende funksionojnë kryesisht me cash.</li>
+                        <li><strong>Aplikacionet Bankare</strong> — Instaloji dhe testoji para udhëtimit. Aktivizo njoftimet për çdo transaksion për të kapur mashtrimet shpejt.</li>
+                        <li><strong>Buxheti Ditor</strong> — Planifiko paraprakisht: buxhet ekonomik ~30-50€/ditë, mesatar ~80-120€/ditë, luksoz ~200€+/ditë.</li>
+                    </ul>
+                </article>
+
+                <!-- 4. Komunikimi -->
+                <article class="essential-card">
+                    <div class="card-icon card-icon-comm">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <h3>Komunikimi dhe Teknologjia</h3>
+                    <ul>
+                        <li><strong>Internet</strong> — Blej një kartë SIM lokale në aeroport (~10-20€ për 5-10 GB) ose përdor e-SIM (Airalo, Holafly) për të shmangur tarifat e larta të roaming-ut.</li>
+                        <li><strong>Aplikacionet Thelbësore</strong> — Google Maps (shkarko hartën offline!), Google Translate (shkarko gjuhën lokale), Uber/Bolt/Grab, Booking.com, Airbnb, XE Currency për konvertimin e monedhës.</li>
+                        <li><strong>Power Bank</strong> — Minimalisht 10,000 mAh (karikon telefonin 2-3 herë). Telefoni është harta, përkthyesi, kamera dhe bileta jote — mos rri pa bateri.</li>
+                        <li><strong>Përshtatës Universal</strong> — Priza elektrike ndryshon: Tipi C/F në Evropë, Tipi G në Britani, Tipi A/B në Amerikë, Tipi I në Australi. Një përshtatës universal kushton 10-15€ dhe të shpëton nga çdo situatë.</li>
+                        <li><strong>Kontaktet e Ambasadës</strong> — Ruaj në telefon adresën, numrin dhe email-in e ambasadës/konsullatës shqiptare më të afërt në destinacion. Në rast humbje pasaporte, ata janë shpëtimi yt.</li>
+                    </ul>
+                </article>
+
+                <!-- 5. Transporti -->
+                <article class="essential-card">
+                    <div class="card-icon card-icon-transport">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                    </div>
+                    <h3>Transporti</h3>
+                    <ul>
+                        <li><strong>Orari i Aeroportit</strong> — Arrije 3 orë para fluturimit ndërkombëtar, 2 orë për fluturim të brendshëm. Kontrolli i sigurisë dhe pasaportave mund të zgjasë deri në 1 orë në sezonin e lartë.</li>
+                        <li><strong>Limitet e Bagazhit</strong> — Standard: 23 kg bagazh i dorëzuar, 7-10 kg bagazh dore (55×40×20 cm) + 1 send personal. Tejkalimi kushton 10-20€/kg — peshoje valixhen para se të nisesh!</li>
+                        <li><strong>Transferi nga Aeroporti</strong> — Rezervoje para nisjes. Opsionet: taksi (~30-60€), autobus/shuttle (~5-15€), tren/metro (~2-10€). Kontrollo nëse ka aplikacion lokal transporti (p.sh., Bolt në Evropë, Grab në Azi).</li>
+                        <li><strong>Leja Ndërkombëtare e Drejtimit</strong> — Nëse merr makinë me qira, disa shtete (SHBA, Japoni, Australi) kërkojnë leje ndërkombëtare drejtimi përveç patentës shqiptare. Merre te "Bashkimi i Automobilistëve Shqiptarë" për ~10€.</li>
+                        <li><strong>Transporti Publik Lokal</strong> — Shkarko oraret dhe hartat. Në shumë qytete, kartat ditore të transportit (day pass) kursejnë 50-70% krahasuar me biletat individuale.</li>
+                    </ul>
+                </article>
+
+                <!-- 6. Akomodimi -->
+                <article class="essential-card">
+                    <div class="card-icon card-icon-stay">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h3>Akomodimi</h3>
+                    <ul>
+                        <li><strong>Konfirmimi i Rezervimit</strong> — Konfirmoje 48 orë para mbërritjes. Disa hotele anulojnë rezervimin nëse nuk konfirmohet.</li>
+                        <li><strong>Check-in/Check-out</strong> — Check-in zakonisht pas 14:00, check-out para 11:00. Nëse arrin herët, shumica e hoteleve ruajnë bagazhin falas deri në check-in.</li>
+                        <li><strong>Adresa në Gjuhën Lokale</strong> — Ruaj adresën e saktë në shqip dhe në gjuhën lokale. Tregoja taksistit — jo të gjithë flasin anglisht.</li>
+                        <li><strong>Siguria e Zonës</strong> — Kontrollo vendndodhjen në Google Maps: a është afër transportit publik? A ka restorante dhe dyqane afër? Lexo komentet për sigurinë e zonës.</li>
+                        <li><strong>Taksat Lokale</strong> — Disa qytete kanë "taksë turistike" (city tax) që paguhet veçmas në hotel, zakonisht 1-5€/natë/person. Merre parasysh në buxhet.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEKSIONI 2: RREGULLAT ===== -->
+    <section id="rregullat" class="rules-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag section-tag-rules">Rregullore</span>
+                <h2 class="section-title">Rregullat Themelore të Udhëtimit</h2>
+                <p class="section-desc">
+                    Çdo shtet ka rregullat e veta. Respektoji ato dhe udhëto pa probleme.
+                    Më poshtë gjen rregullat universale që vlejnë në pothuajse çdo aeroport dhe destinacion.
+                </p>
+            </div>
+
+            <!-- Të Lejuara -->
+            <div class="rules-block rules-allowed">
+                <div class="rules-header">
+                    <div class="rules-icon allowed-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <h3>Gjërat që <span class="text-success">Lejohen</span></h3>
+                </div>
+                <div class="rules-grid">
+                    <div class="rule-card rule-allowed">
+                        <h4>🧳 Bagazhi Standard</h4>
+                        <p>Bagazh dore deri në 10 kg (55×40×20 cm) dhe një send personal (çantë dore, laptop). Bagazh i dorëzuar deri në 23 kg për valixhe. Maksimumi 2 copë bagazh të dorëzuar për pasagjer në shumicën e kompanive.</p>
+                    </div>
+                    <div class="rule-card rule-allowed">
+                        <h4>💊 Ilaçet me Recetë</h4>
+                        <p>Ilaçet personale lejohen gjithmonë. Mbani recetën e mjekut (në anglisht) dhe barnat në paketimin origjinal. Ilaçet e lëngshme mbi 100ml lejohen nëse janë të domosdoshme mjekësore — deklarojini në kontrollin e sigurisë.</p>
+                    </div>
+                    <div class="rule-card rule-allowed">
+                        <h4>📱 Pajisjet Elektronike</h4>
+                        <p>Celularë, laptopë, tableta, kamera, power bank (nën 100 Wh / ~27,000 mAh). Power bank-u duhet të jetë në bagazhin e dorës, asnjëherë në atë të dorëzuar. Dronët lejohen por kontrollo rregullat e destinacionit — disa shtete i ndalojnë plotësisht.</p>
+                    </div>
+                    <div class="rule-card rule-allowed">
+                        <h4>👶 Artikuj për Fëmijë</h4>
+                        <p>Karroca, karriget e makinës, qumështi pluhur dhe ushqimi për fëmijë lejohen pa kufizime në sasi të arsyeshme. Ushqimi i bebeve dhe qumështi janë përjashtim nga rregulli i lëngjeve 100ml.</p>
+                    </div>
+                    <div class="rule-card rule-allowed">
+                        <h4>🛍️ Blerjet Duty-Free</h4>
+                        <p>Mallrat e blera në duty-free pas kontrollit të sigurisë lejohen në bord. Ruani faturën. Nëse ke ndërprerje fluturimi (layover), sigurohu që qeset të jenë të mbyllura me vulën e sigurisë (STEB — Security Tamper-Evident Bag).</p>
+                    </div>
+                    <div class="rule-card rule-allowed">
+                        <h4>🐕 Kafshët Shoqëruese</h4>
+                        <p>Qentë udhërrëfyes dhe kafshët e shërbimit lejohen gjithmonë në kabinë pa pagesë. Për kafshët shtëpiake, kontaktoni kompaninë ajrore — tarifat variojnë nga 30-150€ dhe duhet pasaporta e kafshës me vaksina të përditësuara.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Të Ndaluara -->
+            <div class="rules-block rules-forbidden">
+                <div class="rules-header">
+                    <div class="rules-icon forbidden-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                    </div>
+                    <h3>Gjërat që <span class="text-danger">Nuk Lejohen</span></h3>
+                </div>
+                <div class="rules-grid">
+                    <div class="rule-card rule-forbidden">
+                        <h4>💣 Eksplozivët dhe Armët</h4>
+                        <p>Çdo lloj arme (përfshirë armët e ftohta si thikat mbi 6 cm teh), municion, fishekzjarrë, apo materiale eksplozive. Edhe çakmakët e mëdhenj dhe shkrepëset në sasi të mëdha janë të ndaluara. Rreptësisht e ndaluar — dënohet me ligj penal.</p>
+                    </div>
+                    <div class="rule-card rule-forbidden">
+                        <h4>🔥 Lëndët e Djegshme</h4>
+                        <p>Benzina, gazi i çakmakut, bombola gazi, hollues boje, acetoni dhe çdo lëng i ndezshëm. Të ndaluara si në bagazh dore ashtu edhe në atë të dorëzuar.</p>
+                    </div>
+                    <div class="rule-card rule-forbidden">
+                        <h4>🧪 Kimikatet e Rrezikshme</h4>
+                        <p>Aerosolet (përveç atyre mjekësore/tualeti nën 100ml), zbardhuesit, acidet, helmet, materialet radioaktive, gazi lotsjellës. Substancat gërryese dhe helmuese janë të ndaluara pa përjashtim.</p>
+                    </div>
+                    <div class="rule-card rule-forbidden">
+                        <h4>🥫 Lëngjet mbi 100ml</h4>
+                        <p>Në bagazhin e dorës: lëngjet duhet të jenë në shishe maksimumi 100ml secila, të gjitha të vendosura në një qese transparente të rimbyllshme 20×20cm (maksimumi 1 litër total për pasagjer). Kjo përfshin: ujë, pije, xhel, krem, pastë dhëmbësh, sprej.</p>
+                    </div>
+                    <div class="rule-card rule-forbidden">
+                        <h4>🚬 Duhani dhe Alkooli</h4>
+                        <p>Duhanpirja (përfshirë cigaret elektronike/vape) është rreptësisht e ndaluar në fluturime. Alkooli mbi 70% vol. është i ndaluar në çdo formë. Alkooli nën 70% lejohet në sasi të kufizuar (deri në 5L) vetëm në bagazhin e dorëzuar.</p>
+                    </div>
+                    <div class="rule-card rule-forbidden">
+                        <h4>🍖 Ushqimet dhe Bimët</h4>
+                        <p>Mish i freskët, bulmet, fruta, perime, fara dhe bimë — shumica e shteteve i ndalojnë për arsye sanitare dhe mbrojtje bujqësore. Në SHBA, Australi dhe Zelandën e Re gjobat për ushqime të padeklaruara arrijnë deri në mijëra dollarë.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rregullat specifike shtesë -->
+            <div class="rules-extra">
+                <div class="extra-card">
+                    <h4>⚠️ Rregulla Shtesë që Vlejnë Kudo</h4>
+                    <ul>
+                        <li><strong>Kodi i Veshjes në Vende Fetare:</strong> Në xhami, kisha, tempuj dhe manastire, shpatullat dhe gjunjët duhet të jenë të mbuluar. Në disa vende grave u kërkohet të mbulojnë kokën. Merre gjithmonë një shall në çantë.</li>
+                        <li><strong>Fotografimi i Ndaluar:</strong> Ndërtesat qeveritare, ushtarake, aeroportet, pikat kufitare dhe disa muze nuk lejojnë fotografi. Respekto sinjalistikën.</li>
+                        <li><strong>Nxjerrja e Antikiteteve dhe Natyrës:</strong> Nxjerrja e antikiteteve, koraleve, rërës, gurëve apo guackave nga disa plazhe është e ndaluar me ligj dhe dënohet rëndë (veçanërisht në Greqi, Itali, Turqi, Egjipt).</li>
+                        <li><strong>Deklarimi i Parave në Doganë:</strong> Shumat mbi 10,000€ (ose ekuivalente në monedhë tjetër) duhet të deklarohen në doganë. Mosdeklarimi çon në konfiskim dhe gjoba të mëdha.</li>
+                        <li><strong>Alkooli në Publik:</strong> Në shumë shtete (veçanërisht në Lindjen e Mesme dhe disa shtete të SHBA-së), konsumimi i alkoolit në hapësira publike është i ndaluar dhe dënohet me burg ose gjobë.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEKSIONI 3: PËRGJEGJËSITË ===== -->
+    <section id="pergjegjesite" class="responsibilities-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag section-tag-responsibilities">Etika</span>
+                <h2 class="section-title">Përgjegjësitë e Udhëtarit</h2>
+                <p class="section-desc">
+                    Të udhëtosh është privilegj, por edhe përgjegjësi. 
+                    Një udhëtar i mirë respekton vendin, kulturën, mjedisin dhe njerëzit që e presin.
+                </p>
+            </div>
+
+            <div class="responsibilities-grid">
+                <div class="resp-card">
+                    <div class="resp-number">01</div>
+                    <div class="resp-content">
+                        <h3>Respekto Kulturën dhe Zakonet Lokale</h3>
+                        <p>Mëso 5-10 fjalë në gjuhën lokale: "faleminderit", "përshëndetje", "ju lutem", "mirupafshim", "sa kushton". Respekto traditat dhe festat lokale. Ajo që është normale në Shqipëri mund të jetë ofenduese diku tjetër. Për shembull, prekja e kokës së dikujt në Azi është ofendim, ndërsa në Lindjen e Mesme, e majta konsiderohet e papastër. Informohu para se të nisesh.</p>
+                    </div>
+                </div>
+
+                <div class="resp-card">
+                    <div class="resp-number">02</div>
+                    <div class="resp-content">
+                        <h3>Mbroni Mjedisin dhe Natyrën</h3>
+                        <p>Mos hidh mbeturina — edhe një bisht cigareje ndot deri në 500 litra ujë. Përdor shishe uji të ripërdorshme (kursen deri në 150 shishe plastike në një udhëtim 2-javor). Respekto parqet natyrore: ec vetëm në shtigjet e caktuara, mos ndiq kafshët e egra, mos ushqe kafshët. Mos merr "suvenire" nga natyra — gurë, rërë, korale, bimë të mbrojtura.</p>
+                    </div>
+                </div>
+
+                <div class="resp-card">
+                    <div class="resp-number">03</div>
+                    <div class="resp-content">
+                        <h3>Respekto Ligjet e Vendit Pritës</h3>
+                        <p>Ti je i detyruar të respektosh ligjet e shtetit ku ndodhesh, edhe nëse ndryshojnë nga ato të Shqipërisë. Kjo përfshin: kufijtë e shpejtësisë, rregullat e parkimit, ndalimin e duhanit në ambiente publike, konsumimin e alkoolit në rrugë dhe oraret e qetësisë. Injoranca nuk është justifikim para ligjit — "nuk e dija" nuk të shpëton nga gjoba.</p>
+                    </div>
+                </div>
+
+                <div class="resp-card">
+                    <div class="resp-number">04</div>
+                    <div class="resp-content">
+                        <h3>Jini të Përgatitur dhe të Informuar</h3>
+                        <p>Ke përgjegjësinë të informohesh për gjendjen e sigurisë në destinacion. Para nisjes, kontrollo faqen e Ministrisë së Jashtme për paralajmërimet e udhëtimit. Regjistrohu në ambasadën shqiptare nëse udhëton në zona me risk. Kontrollo motin — stuhitë, musonet dhe temperaturat ekstreme mund të ndikojnë planet e tua.</p>
+                    </div>
+                </div>
+
+                <div class="resp-card">
+                    <div class="resp-number">05</div>
+                    <div class="resp-content">
+                        <h3>Mbështet Ekonominë Lokale</h3>
+                        <p>Blej nga dyqanet dhe tregjet lokale, jo nga zinxhirët ndërkombëtarë. Provo kuzhinën vendase në restorante familjare. Përdor guida lokale në vend të agjencive të mëdha ndërkombëtare. Kjo jo vetëm që ndihmon familjet vendase, por të jep një përvojë shumë më autentike dhe të paharrueshme.</p>
+                    </div>
+                </div>
+
+                <div class="resp-card">
+                    <div class="resp-number">06</div>
+                    <div class="resp-content">
+                        <h3>Jini të Ndershëm dhe të Sjellshëm</h3>
+                        <p>Mos bëj zhurmë të tepërt në akomodim — veçanërisht gjatë natës (22:00-08:00). Lëre dhomën ashtu siç e gjete. Nëse diçka prishet, raportoje sinqerisht. Sjellja jote ndikon në mënyrën si trajtohen udhëtarët e ardhshëm nga Shqipëria. Ji ambasadori i vendit tënd.</p>
+                    </div>
+                </div>
+
+                <div class="resp-card">
+                    <div class="resp-number">07</div>
+                    <div class="resp-content">
+                        <h3>Sigurohu dhe Siguro të Tjerët</h3>
+                        <p>Ke përgjegjësi për sigurinë tënde dhe të atyre që udhëtojnë me ty. Mos rreziko në aktivitete ekstreme për të cilat nuk ke përvojë. Përdor gjithmonë pajisjet e sigurisë (jelek shpëtimi, helmetë, parzmore). Ndihmo udhëtarët e tjerë në rast nevoje — bashkëpunimi dhe solidariteti midis udhëtarëve është thelbësor.</p>
+                    </div>
+                </div>
+
+                <div class="resp-card">
+                    <div class="resp-number">08</div>
+                    <div class="resp-content">
+                        <h3>Dokumento me Përgjegjësi dhe Respekt</h3>
+                        <p>Bëj foto për kujtime — por jo kur është e ndaluar. Pyet gjithmonë përpara se të fotografosh njerëz të tjerë, veçanërisht fëmijë dhe gra në kultura konservatore. Mos posto foto të të tjerëve në rrjetet sociale pa lejen e tyre. Respekto privatësinë dhe dinjitetin e çdo njeriu që takon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <span class="logo-icon">✈</span>
+                    Travel<span class="logo-accent">Wise</span>
+                </a>
+                <p>Guida më e plotë për çdo udhëtar. Informohu, përgatitu dhe udhëto pa stres.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Faqet</h4>
+                    <a href="index.html">Kreu</a>
+                    <a href="udhetimi.html">Guida e Udhëtimit</a>
+                    <a href="lista.html">Lista e Kontrollit</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Burime</h4>
+                    <a href="#" target="_blank" rel="noopener">Ambasadat Shqiptare</a>
+                    <a href="#" target="_blank" rel="noopener">Këshillat e Udhëtimit</a>
+                    <a href="#" target="_blank" rel="noopener">Sigurimi i Udhëtimit</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TravelWise. Të gjitha të drejtat e rezervuara. Krijuar me ❤️ për udhëtarët shqiptarë.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
