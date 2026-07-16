@@ -25,16 +25,25 @@
     --text-muted: #9B8E7A;
     --text-light: #B8A990;
     
-    /* Ngjyra theksuese */
-    --accent: #C87A4A;
-    --accent-hover: #B0683A;
-    --accent-light: #F5E1D0;
-    --accent-glow: rgba(200, 122, 74, 0.25);
+    /* Ngjyra theksuese — më të gjalla për udhëtarët */
+    --accent: #E8724A;
+    --accent-hover: #D05A30;
+    --accent-light: #FDE8DF;
+    --accent-glow: rgba(232, 114, 74, 0.30);
     
-    /* Ngjyra shtesë */
-    --teal: #3D7A7A;
-    --teal-light: #E8F3F3;
-    --teal-hover: #346868;
+    /* Ngjyra shtesë — të frymëzuara nga udhëtimi */
+    --sunset: #F4845F;
+    --sunset-light: #FDE0D5;
+    --ocean: #1B98A0;
+    --ocean-light: #D9F0F1;
+    --ocean-dark: #147780;
+    --golden: #E8B86D;
+    --golden-light: #FDF3E2;
+    --navy: #264653;
+    --sky: #7EC8E3;
+    --sky-light: #E3F4FA;
+    --forest: #2A9D8F;
+    --forest-light: #D8F0ED;
     
     --success: #4A9C6C;
     --success-light: #EAF5EF;
@@ -295,19 +304,61 @@ body {
 
 /* ---------- SEKSIONI 1: HERO ---------- */
 .hero-section {
-    background: linear-gradient(170deg, #FEFAF3 0%, #FDF5EC 40%, #FBF0E2 100%);
+    background: linear-gradient(160deg, #FEF9F0 0%, #FDF3E5 25%, #FCE8D5 50%, #FDE4D0 75%, #FEFAF3 100%);
+    position: relative;
     overflow: hidden;
     padding-top: var(--nav-height);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Harta e botës në sfond */
+.hero-section::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(232, 114, 74, 0.08) 0%, transparent 35%),
+        radial-gradient(circle at 80% 60%, rgba(27, 152, 160, 0.07) 0%, transparent 35%),
+        radial-gradient(circle at 50% 80%, rgba(232, 184, 109, 0.08) 0%, transparent 30%),
+        radial-gradient(circle at 10% 80%, rgba(42, 157, 143, 0.05) 0%, transparent 25%),
+        radial-gradient(circle at 90% 15%, rgba(244, 132, 95, 0.06) 0%, transparent 25%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Pika si rrugë fluturimi */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        radial-gradient(2px 2px at 15% 25%, rgba(232,114,74,0.3) 50%, transparent 50%),
+        radial-gradient(2px 2px at 25% 45%, rgba(27,152,160,0.25) 50%, transparent 50%),
+        radial-gradient(2px 2px at 75% 20%, rgba(232,184,109,0.3) 50%, transparent 50%),
+        radial-gradient(2px 2px at 85% 55%, rgba(244,132,95,0.25) 50%, transparent 50%),
+        radial-gradient(2px 2px at 60% 75%, rgba(42,157,143,0.3) 50%, transparent 50%),
+        radial-gradient(2px 2px at 35% 65%, rgba(232,114,74,0.2) 50%, transparent 50%),
+        radial-gradient(2px 2px at 10% 75%, rgba(27,152,160,0.25) 50%, transparent 50%),
+        radial-gradient(2px 2px at 90% 85%, rgba(232,184,109,0.2) 50%, transparent 50%),
+        radial-gradient(2px 2px at 50% 15%, rgba(244,132,95,0.2) 50%, transparent 50%),
+        radial-gradient(2px 2px at 70% 40%, rgba(42,157,143,0.2) 50%, transparent 50%);
+    background-size: 100% 100%;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .hero-bg-pattern {
     position: absolute;
     inset: 0;
-    background-image:
-        radial-gradient(circle at 15% 30%, rgba(200, 122, 74, 0.06) 0%, transparent 50%),
-        radial-gradient(circle at 85% 70%, rgba(61, 122, 122, 0.05) 0%, transparent 50%),
-        radial-gradient(circle at 50% 50%, rgba(200, 122, 74, 0.03) 0%, transparent 70%);
+    background: 
+        repeating-linear-gradient(0deg, transparent, transparent 80px, rgba(232,184,109,0.06) 80px, rgba(232,184,109,0.06) 81px),
+        repeating-linear-gradient(90deg, transparent, transparent 80px, rgba(27,152,160,0.04) 80px, rgba(27,152,160,0.04) 81px);
     pointer-events: none;
+    z-index: 0;
 }
 
 .hero-content {
@@ -504,8 +555,8 @@ body {
 }
 
 .section-tag-responsibilities {
-    background: var(--teal-light);
-    color: var(--teal);
+    background: var(--ocean-light);
+    color: var(--ocean-dark);
 }
 
 .section-tag-checklist {
@@ -1683,5 +1734,244 @@ body {
     }
     .calc-total .total-amount {
         font-size: 2rem;
+    }
+}
+
+/* ============================================================
+   DESTINACIONE — Kartolina Udhëtimi
+   ============================================================ */
+
+.destinations-section {
+    background: var(--bg-secondary);
+    padding: 5rem 0;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.dest-card {
+    background: var(--bg-card);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-light);
+    transition: all var(--transition-slow);
+    cursor: pointer;
+    position: relative;
+}
+
+.dest-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.dest-card-img {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.dest-card-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.08) 100%);
+}
+
+.dest-card:nth-child(1) .dest-card-img { background: linear-gradient(135deg, #FDE4D0, #FCE8D5); }
+.dest-card:nth-child(2) .dest-card-img { background: linear-gradient(135deg, #D9F0F1, #E3F4FA); }
+.dest-card:nth-child(3) .dest-card-img { background: linear-gradient(135deg, #FDF3E2, #FDE8DF); }
+.dest-card:nth-child(4) .dest-card-img { background: linear-gradient(135deg, #D8F0ED, #E3F4FA); }
+.dest-card:nth-child(5) .dest-card-img { background: linear-gradient(135deg, #FDE8DF, #FDEDEC); }
+.dest-card:nth-child(6) .dest-card-img { background: linear-gradient(135deg, #FDF3E2, #FCE8D5); }
+
+.dest-card-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(8px);
+    padding: 0.3rem 0.8rem;
+    border-radius: var(--radius-full);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent);
+    z-index: 2;
+    box-shadow: var(--shadow-sm);
+}
+
+.dest-card-body {
+    padding: 1.5rem;
+}
+
+.dest-card-body h3 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.35rem;
+}
+
+.dest-card-body .dest-region {
+    font-size: 0.8rem;
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.dest-card-body p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.dest-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.5rem;
+    border-top: 1px dashed var(--border-light);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.dest-card-footer span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+/* ============================================================
+   KARTAT SI KARTOLINA — Stil i ri
+   ============================================================ */
+
+.essential-card {
+    border-radius: var(--radius-lg) var(--radius-lg) var(--radius-lg) 0;
+    border-left: 4px solid var(--accent);
+    position: relative;
+}
+
+.essential-card::after {
+    content: '✈';
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.essential-card:nth-child(1) { border-left-color: var(--accent); }
+.essential-card:nth-child(2) { border-left-color: var(--ocean); }
+.essential-card:nth-child(3) { border-left-color: var(--forest); }
+.essential-card:nth-child(4) { border-left-color: var(--sunset); }
+.essential-card:nth-child(5) { border-left-color: var(--golden); }
+.essential-card:nth-child(6) { border-left-color: var(--navy); }
+
+.essential-card::before {
+    content: '';
+    position: absolute;
+    top: -1px; left: -1px; right: -1px; bottom: -1px;
+    border: 2px dashed transparent;
+    border-radius: var(--radius-lg);
+    pointer-events: none;
+    transition: border-color var(--transition-slow);
+}
+
+.essential-card:hover::before {
+    border-color: var(--border-medium);
+}
+
+.rule-card {
+    position: relative;
+    overflow: visible;
+}
+
+.rule-card::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 20px;
+    right: 20px;
+    height: 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+.rule-allowed::after { background: var(--forest); }
+.rule-forbidden::after { background: var(--danger); }
+
+.site-footer {
+    background: linear-gradient(135deg, var(--navy), #1a3340);
+    position: relative;
+    overflow: hidden;
+}
+
+.site-footer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(232,184,109,0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(27,152,160,0.06) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.ticket-divider {
+    width: 100%;
+    height: 2px;
+    background: repeating-linear-gradient(90deg, var(--border-medium) 0, var(--border-medium) 8px, transparent 8px, transparent 16px);
+    margin: 3rem 0;
+}
+
+.compass-ornament {
+    text-align: center;
+    font-size: 2rem;
+    opacity: 0.3;
+    margin: 2rem 0;
+    animation: floatAround 10s infinite ease-in-out;
+}
+
+.recommended-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: linear-gradient(135deg, var(--golden), var(--accent));
+    color: white;
+    padding: 0.25rem 0.9rem;
+    border-radius: var(--radius-full);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(232,184,109,0.3);
+}
+
+.overview-card {
+    position: relative;
+    border: 2px solid var(--border-light);
+}
+
+.overview-card:nth-child(1) { border-top: 4px solid var(--accent); }
+.overview-card:nth-child(2) { border-top: 4px solid var(--ocean); }
+.overview-card:nth-child(3) { border-top: 4px solid var(--forest); }
+.overview-card:nth-child(4) { border-top: 4px solid var(--golden); }
+
+@media (max-width: 768px) {
+    .destinations-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .dest-card-img {
+        height: 130px;
+        font-size: 3rem;
     }
 }
